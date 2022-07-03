@@ -35,4 +35,7 @@
     "sass": "^1.49.8"
   },
   "homepage": "https://github.com/akhilashokan/akhilashokan.github.io#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
