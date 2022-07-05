@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
-        "module": "commonjs"
+        "target": "ES5",
+        "outFile": "public/assets/js/main.js"
     },
     "exclude": [
         "node_modules"
