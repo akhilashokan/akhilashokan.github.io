@@ -1,5 +1,7 @@
 document.addEventListener('readystatechange', () => {
-    document.readyState === "interactive" ? greet() : ''
+    if (document.readyState === "complete") {
+        greet();
+    }
 })
 
 function greet(): void {
