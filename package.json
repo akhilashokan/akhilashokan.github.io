@@ -6,8 +6,10 @@
   "scripts": {
     "build:sass": "sass  --no-source-map src/assets/css:public/assets/css",
     "copy:html": "copyfiles -u 1 src/*.html public",
+    "copy:json": "copyfiles -u 1 src/*.json public",
     "copy": "npm-run-all --parallel copy:*",
     "watch:html": "onchange src/*.html -- npm run copy:html",
+    "watch:json": "onchange src/*.json -- npm run copy:json",
     "watch:sass": "sass  --no-source-map --watch src/assets/css:public/assets/css",
     "watch:ts": "tsc -w",
     "watch": "npm-run-all --parallel watch:*",
@@ -20,7 +22,7 @@
     "type": "git",
     "url": "git+https://github.com/akhilashokan/akhilashokan.github.io.git"
   },
-  "author": "",
+  "author": "Akhil Ashokan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/akhilashokan/akhilashokan.github.io/issues"
