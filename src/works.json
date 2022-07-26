@@ -1,12 +1,14 @@
-{
-    "stirchbird": {
+[
+    {
+        "name": "stirchbird",
         "description": "Sitichbird landing page",
         "link": "",
         "thumb": ""
     },
-    "catering App": {
-        "description": "Sitichbird landing page",
+    {
+        "name": "catering App",
+        "description": "catering app",
         "link": "",
-        "thumb": ""
+        "thumb": "https://some.com"
     }
-}
+]
