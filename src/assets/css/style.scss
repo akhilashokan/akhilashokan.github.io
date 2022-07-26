@@ -91,3 +91,21 @@ section {
     max-width: 1600px;
     margin-inline: auto;
 }
+
+.banner {
+    min-height: 70vh;
+    max-height: 30rem;
+    margin-left: 0;
+    display: flex;
+}
+
+.intro {
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+
+    &::after {
+        content: attr(craft);
+        display: block;
+        font-size: 0.8em;
+        font-weight: 400;
+    }
+}
