@@ -12,6 +12,8 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300&display=swap" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 
 <body>
@@ -33,21 +35,29 @@
 	<main>
 		<section class="banner">
 			<div class="wrapper">
-				<h1 class="intro" craft="web developer" >Hello there! good <span id="__greeting">evening</span> <br> Iam Akhil Ashokan</h1>
+				<h1 class="intro" craft="web developer">Hello there! good <span id="__greeting">evening</span> <br> Iam
+					Akhil Ashokan</h1>
 			</div>
 		</section>
-		<section>
-				<div class="wrapper">
-					<div class="block">
-						<h2>welcome to my website</h2>
-						<p>I'm a web developer with more than two years of expertise in HTML, CSS, javascript, and PHP. Interested in all kinds of development, not just websites. I've dabbled with android (java), flutter (Windows), react, and python (tkinter/flask) to build apps. I really appreciate learning about new things and how things function behind the scenes.</p>
-					</div>
-				</div>
-		</section>
-		<section class="works" >
+		<section class="about">
 			<div class="wrapper">
+				<div class="block">
+					<h2>welcome to my website</h2>
+					<p>I'm a web developer with more than two years of expertise in HTML, CSS, javascript, and PHP.
+						<span onclick="loadMore(this)" class="_showMore" title="know more ?">
+							I am
+						</span>
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="works">
+			<div class="wrapper column">
+				<header>
+					<h2>Works</h2>
+				</header>
 				<div class="works_container" id="_works">
-					
+
 				</div>
 			</div>
 		</section>
@@ -67,7 +77,8 @@
 			<p>&copy;2022</p>
 		</div>
 	</footer>
-<script src="assets/js/main.js"></script>
+
+	<script src="assets/js/main.js"></script>
 </body>
 
 </html>
