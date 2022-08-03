@@ -1,10 +1,16 @@
 {
     "compilerOptions": {
         "target": "ES2017",
-        "outFile": "public/assets/js/main.js"
+        "outFile": "public/assets/js/main.js",
+        "lib": [
+            "DOM"
+        ]
     },
     "exclude": [
         "node_modules"
     ],
-    "files": ["src/index.ts","node_modules/gsap/types/index.d.ts"]
+    "files": [
+        "src/index.ts",
+        "node_modules/gsap/types/index.d.ts"
+    ]
 }
