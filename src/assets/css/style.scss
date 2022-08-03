@@ -14,6 +14,11 @@ html {
 $primaryFont: 'Poiret One', monospace;
 $secondaryFont: 'Work Sans', sans-serif;
 
+@function toRem($value) {
+    $result: ($value/16)+rem;
+    @return $result;
+}
+
 h1,
 h2,
 h3,
@@ -23,37 +28,16 @@ h6 {
     font-family: $primaryFont;
 }
 
-
-
-
 .header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 1rem;
+    padding: toRem(20);
 
     .wrapper {
         display: block;
     }
-}
-
-.wrapper {
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-
-    &.column {
-        gap: 0.5rem;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-}
-
-._hide {
-    display: none;
 }
 
 .logo {
@@ -93,16 +77,6 @@ h6 {
     }
 }
 
-main {
-    padding-inline: 1rem;
-}
-
-section {
-    max-width: 1600px;
-    margin-inline: auto;
-    margin-bottom: 2rem;
-}
-
 .banner {
     min-height: 100vh;
     max-height: 30rem;
@@ -111,16 +85,31 @@ section {
 }
 
 .intro {
-    font-size: clamp(1.5rem, 5vw, 2.5rem);
+    font-size: toRem(24);
+    font-weight: 400;
 
     &::after {
         content: attr(craft);
         display: block;
-        font-size: 0.8em;
+        font-size: toRem(18);
         font-weight: 400;
     }
 }
 
+.__hello {
+    font-size: toRem(96);
+    display: block;
+}
+
+.__name {
+    display: block;
+    margin-top: 20vh;
+    font-size: toRem(48);
+
+    .__iam {
+        font-size: toRem(18);
+    }
+}
 
 .about {
     h2 {
@@ -165,4 +154,33 @@ section {
         text-transform: capitalize;
         font-size: 2rem;
     }
+}
+
+// general
+main {
+    padding-inline: 1rem;
+}
+
+section {
+    max-width: 1600px;
+    margin-inline: auto;
+    margin-bottom: 2rem;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &.column {
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+._hide {
+    display: none;
 }
