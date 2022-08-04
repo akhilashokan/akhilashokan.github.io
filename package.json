@@ -4,20 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build:sass": "sass  --no-source-map src/assets/css:public/assets/css",
-    "copy:html": "copyfiles -u 1 src/*.html public",
-    "copy:json": "copyfiles -u 1 src/*.json public",
-    "copy:images": "copyfiles -u 1 src/assets/images/** public/",
-    "copy": "npm-run-all --parallel copy:*",
-    "watch:html": "onchange src/*.html -- npm run copy:html",
-    "watch:json": "onchange src/*.json -- npm run copy:json",
-    "watch:sass": "sass  --no-source-map --watch src/assets/css:public/assets/css",
-    "watch:ts": "tsc -w",
-    "watch": "npm-run-all --parallel watch:*",
-    "serve": "browser-sync start --server public --files public",
-    "start": "npm-run-all copy --parallel watch serve",
-    "build": "npm-run-all copy:html build:*",
-    "postbuild": "postcss public/assets/css/*.css -u autoprefixer cssnano -r --no-map"
+    "dev": "next dev"
   },
   "repository": {
     "type": "git",
@@ -36,14 +23,6 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.2",
-    "browser-sync": "^2.27.7",
-    "copyfiles": "^2.4.1",
-    "cssnano": "^5.0.17",
-    "npm-run-all": "^4.1.5",
-    "onchange": "^7.1.0",
-    "postcss-cli": "^9.1.0",
-    "sass": "^1.49.8",
     "typescript": "^4.7.4"
   }
 }
