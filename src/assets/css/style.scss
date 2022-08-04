@@ -19,6 +19,7 @@ $secondaryFont: 'Work Sans', sans-serif;
     @return $result;
 }
 
+
 h1,
 h2,
 h3,
@@ -26,6 +27,7 @@ h4,
 h5,
 h6 {
     font-family: $primaryFont;
+    font-weight: 400;
 }
 
 .header {
@@ -33,7 +35,7 @@ h6 {
     top: 0;
     left: 0;
     width: 100%;
-    padding: toRem(20);
+    padding: toRem(24);
 
     .wrapper {
         display: block;
@@ -45,24 +47,29 @@ h6 {
     position: relative;
     width: 100%;
     display: flex;
-    column-gap: 1.5ch;
+    column-gap: 0.8ch;
 
     &::after {
         content: '';
         flex: 1;
         height: inherit;
         display: inline-block;
-        border: 2.5px solid #000;
+        border: 1px solid #000;
         border-top-color: transparent;
         border-right-color: transparent;
-        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 8px;
+    }
+
+    svg {
+        height: toRem(24);
+        width: auto;
     }
 }
 
 .menu {
     position: absolute;
     right: 0;
-    top: 50%;
+    top: 0;
     width: 2rem;
     display: inline-block;
 
@@ -70,16 +77,14 @@ h6 {
         content: '';
         display: inline-block;
         width: 2rem;
-        height: .8rem;
-        border: 2px solid #000;
+        height: .6rem;
+        border: 1px solid #000;
         border-inline-color: transparent;
         cursor: pointer;
     }
 }
 
 .banner {
-    min-height: 100vh;
-    max-height: 30rem;
     margin-left: 0;
     display: flex;
 }
@@ -108,12 +113,14 @@ h6 {
 
     .__iam {
         font-size: toRem(18);
+        display: block;
     }
 }
 
 .about {
     h2 {
-        letter-spacing: 0.1em;
+        font-size: toRem(24);
+        line-height: 1.5em;
         margin-bottom: 0.2em;
     }
 
@@ -164,7 +171,7 @@ main {
 section {
     max-width: 1600px;
     margin-inline: auto;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
 }
 
 .wrapper {
