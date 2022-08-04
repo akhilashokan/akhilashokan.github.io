@@ -15,8 +15,10 @@ function greet(): void {
 
 async function loadWorks() {
     type work = {
-        name: string,
+        title: string,
+        subTitle: string,
         description: string,
+        buildWith: string,
         link: string,
         thumb: string
     }
@@ -32,17 +34,18 @@ async function loadWorks() {
 
         if (work.thumb.match(/\.(jpg|png|webp)$/) !== null) container.setAttribute('thumb', encodeURI(work.thumb))
 
-        if (work.link !== null) {
+        if (work.link.match(regxUrl) !== null) {
             var _link = document.createElement('a')
             _link.setAttribute('href', work.link)
             _link.setAttribute('target', 'blank')
+            _link.innerHTML = "goto";
             container.appendChild(_link)
         }
-        title.innerText = work.name
+        title.innerText = work.title
         description.innerText = work.description
         container.appendChild(title)
         container.appendChild(description)
-        container.setAttribute('name', work.name)
+        container.setAttribute('name', work.title)
         container.classList.add('work')
 
         workContainer.appendChild(container)
@@ -53,8 +56,9 @@ async function loadWorks() {
 function loadMore(e: HTMLElement) {
     e.remove()
     var text = 'I am interested in all kinds of development,so far i have dabbled with android (java), flutter (Windows), react, and python (tkinter/flask) to build apps. I really appreciate learning about new things and how things function behind the scenes.'
-    var para = document.querySelector('.about p')
+    var para = document.querySelector('.about h2')
     var array = text.trim().split(" ")
+
     array.forEach(item => {
         var t = document.createElement('span')
         t.classList.add('_spans')
