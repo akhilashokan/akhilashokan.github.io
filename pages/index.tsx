@@ -1,0 +1,1 @@
+export default () =>{ return <h1>initial setup</h1> }

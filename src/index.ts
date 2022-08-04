@@ -65,6 +65,6 @@ function loadMore(e: HTMLElement) {
         t.innerText = item + ' '
         para.appendChild(t);
     })
-    gsap.to('._spans', { display: 'inline', stagger: .05 })
-    gsap.to('._spans', { opacity: 1, stagger: .05 })
+    // gsap.to('._spans', { display: 'inline', stagger: .05 })
+    // gsap.to('._spans', { opacity: 1, stagger: .05 })
 }
