@@ -1,0 +1,193 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+$primaryFont: 'Poiret One', monospace;
+$secondaryFont: 'Work Sans', sans-serif;
+
+@function toRem($value) {
+    $result: ($value/16)+rem;
+    @return $result;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $primaryFont;
+    font-weight: 400;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: toRem(24);
+
+    .wrapper {
+        display: block;
+    }
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    display: flex;
+    column-gap: 0.8ch;
+
+    &::after {
+        content: '';
+        flex: 1;
+        height: inherit;
+        display: inline-block;
+        border: 1px solid #000;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        border-bottom-left-radius: 8px;
+    }
+
+    svg {
+        height: toRem(24);
+        width: auto;
+    }
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    display: inline-block;
+
+    ._toggle_label::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: .6rem;
+        border: 1px solid #000;
+        border-inline-color: transparent;
+        cursor: pointer;
+    }
+}
+
+.banner {
+    margin-left: 0;
+    display: flex;
+}
+
+.intro {
+    font-size: toRem(24);
+    font-weight: 400;
+
+    &::after {
+        content: attr(craft);
+        display: block;
+        font-size: toRem(18);
+        font-weight: 400;
+    }
+}
+
+.__hello {
+    font-size: toRem(96);
+    display: block;
+}
+
+.__name {
+    display: block;
+    margin-top: 20vh;
+    font-size: toRem(48);
+
+    .__iam {
+        font-size: toRem(18);
+        display: block;
+    }
+}
+
+.about {
+    h2 {
+        font-size: toRem(24);
+        line-height: 1.5em;
+        margin-bottom: 0.2em;
+    }
+
+    ._showMore {
+        opacity: 0.5;
+        cursor: pointer;
+
+        &::after {
+            content: '....';
+        }
+    }
+
+    ._spans {
+        display: none;
+        opacity: 0.5;
+    }
+
+    &:hover {
+        span {}
+    }
+
+}
+
+
+.works_container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 0.5rem;
+}
+
+.work {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    h3 {
+        text-transform: capitalize;
+        font-size: 2rem;
+    }
+}
+
+// general
+main {
+    padding-inline: 1rem;
+}
+
+section {
+    max-width: 1600px;
+    margin-inline: auto;
+    margin-bottom: 4rem;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    &.column {
+        gap: 0.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+._hide {
+    display: none;
+}
