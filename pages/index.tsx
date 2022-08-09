@@ -1,3 +1,4 @@
+import About from "../components/about"
 import Banner from "../components/banner"
 import Header from "../components/header"
 
@@ -6,6 +7,7 @@ export default () => {
         <Header />
         <main>
             <Banner />
+            <About />
         </main>
     </>)
 }

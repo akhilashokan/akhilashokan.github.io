@@ -11,7 +11,7 @@ export default function Banner() {
     return (
         <section className="banner">
             <div className="wrapper">
-                <h1 className="intro" attr-raft="web developer">
+                <h1 className="intro" attr-craft="web developer">
                     <span className="__hello">Hello</span> there! good {greeting} <br />
                     <span className="__name">
                         <span className="__iam">Iam</span>
