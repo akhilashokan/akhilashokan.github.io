@@ -14,7 +14,7 @@ export default function Banner() {
                 <h1 className="intro" attr-craft="web developer">
                     <span className="__hello">Hello</span> there! good {greeting} <br />
                     <span className="__name">
-                        <span className="__iam">Iam</span>
+                        <span className="__iam">Iam </span>
                         Akhil Ashokan
                     </span>
                 </h1>

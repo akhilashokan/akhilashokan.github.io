@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Work+Sans:wght@200;400&display=swap');
+
 html {
     box-sizing: border-box;
 }
@@ -86,6 +88,7 @@ h6 {
 
 .banner {
     margin-left: 0;
+    min-height: 90vh;
     display: flex;
 }
 
@@ -119,6 +122,8 @@ h6 {
 
 .about {
     position: relative;
+    margin-left: 0;
+    margin-top: 8rem;
 
     &::after {
         content: 'about';
@@ -160,7 +165,6 @@ h6 {
 
 }
 
-
 .works_container {
     width: 100%;
     display: grid;
@@ -179,7 +183,8 @@ h6 {
     }
 }
 
-// general
+
+// general 
 main {
     padding-inline: 1rem;
 }
@@ -206,4 +211,18 @@ section {
 
 ._hide {
     display: none;
+}
+
+@media (min-width:960px) {
+
+    .__hello,
+    .__name,
+    .__name .__iam {
+        display: unset;
+        font-size: unset;
+    }
+
+    .intro {
+        font-size: toRem(74);
+    }
 }
