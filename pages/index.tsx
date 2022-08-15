@@ -1,6 +1,7 @@
 import About from "../components/about"
 import Banner from "../components/banner"
 import Header from "../components/header"
+import Works from "../components/works"
 
 export default () => {
     return (<>
@@ -8,6 +9,7 @@ export default () => {
         <main>
             <Banner />
             <About />
+            <Works />
         </main>
     </>)
 }
