@@ -32,6 +32,12 @@ h6 {
     font-weight: 400;
 }
 
+body {
+    font-family: $secondaryFont;
+    font-weight: 400;
+
+}
+
 .header {
     position: sticky;
     top: 0;
@@ -165,24 +171,6 @@ h6 {
 
 }
 
-.works_container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 0.5rem;
-}
-
-.work {
-    display: flex;
-    gap: 0.5rem;
-    flex-wrap: wrap;
-
-    h3 {
-        text-transform: capitalize;
-        font-size: 2rem;
-    }
-}
-
 
 // general 
 main {
@@ -211,6 +199,16 @@ section {
 
 ._hide {
     display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+
+    .githubLink {
+        width: 0.8em;
+    }
 }
 
 @media (min-width:960px) {
