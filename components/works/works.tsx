@@ -1,3 +1,4 @@
+import gsap from "gsap"
 import react, { ReactElement, useEffect, useState } from "react"
 import style from "./works.module.scss"
 type Work = {
@@ -18,22 +19,35 @@ export default function Works() {
         fetch('https://akhilprops.netlify.app/get/works')
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 setWorks(data)
                 setLoading(false)
             })
     }, [])
 
-    if (isLoading) return <p>Loading...</p>
-    if (!works) return <h2>no works yet</h2>
+
+
+    if (isLoading)
+        return (
+            <section className="works">
+                <div className="wrapper column">
+                    <h2 className={style.loading} >Loading...</h2>
+                </div>
+            </section>
+        )
+
+
+    if (!works) return (
+        <section className="works">
+            <div className="wrapper column">
+                <h2>no works yet</h2>
+            </div>
+        </section>
+    )
 
     return (
         <section className="works">
             <div className="wrapper column">
-                <header>
-                    <h2>Works</h2>
-                </header>
-                <div className={style.works_container} >
+                <div className={style.works_container} id="__id">
                     {works.map((work: Work, index) => {
                         var thumb = ''
                         var link: ReactElement
@@ -61,3 +75,5 @@ export default function Works() {
         </section>
     )
 }
+
+
