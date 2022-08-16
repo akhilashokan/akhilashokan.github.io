@@ -1,0 +1,75 @@
+@function toRem($value) {
+    $result: ($value/16)+rem;
+    @return $result;
+}
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: toRem(24);
+
+    .wrapper {
+        display: block;
+    }
+}
+
+.logo {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    display: flex;
+    column-gap: 0.8ch;
+
+    &::after {
+        content: '';
+        flex: 1;
+        height: inherit;
+        display: inline-block;
+        border: 1px solid transparent;
+        border-bottom-color: black;
+        border-left-color: black;
+        border-bottom-left-radius: 0.4em;
+    }
+
+    @media (prefers-color-scheme: light) {
+        &::after {
+            border-bottom-color: black;
+            border-left-color: black;
+        }
+    }
+
+    @media (prefers-color-scheme: dark) {
+        &::after {
+            border-bottom-color: gray;
+            border-left-color: gray;
+        }
+    }
+
+
+    svg {
+        height: toRem(24);
+        width: auto;
+    }
+}
+
+
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2rem;
+    display: inline-block;
+
+    ._toggle_label::before {
+        content: '';
+        display: inline-block;
+        width: 2rem;
+        height: .6rem;
+        border: 1px solid #000;
+        border-inline-color: transparent;
+        cursor: pointer;
+    }
+}

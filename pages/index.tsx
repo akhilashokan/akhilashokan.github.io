@@ -1,6 +1,6 @@
 import About from "../components/about"
 import Banner from "../components/banner"
-import Header from "../components/header"
+import Header from "../components/header/header"
 import Works from "../components/works/works"
 
 export default () => {
