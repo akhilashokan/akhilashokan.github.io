@@ -4,7 +4,7 @@ import Footer from "../components/footer/footer"
 import Header from "../components/header/header"
 import Works from "../components/works/works"
 
-export default () => {
+export default function App() {
     return (<>
         <Header />
         <main>
@@ -15,3 +15,4 @@ export default () => {
         <Footer />
     </>)
 }
+App.displayName = "App"
