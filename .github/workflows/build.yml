@@ -22,8 +22,8 @@ jobs:
         uses: anorcle/next-pages@v1.0
       - name: Commit and push changes
         run: |
-          git config --global user.name "anorcle"
-          git config --global user.email "next-pages@anorcle.com"
+          git config --global user.name "akhilashokan"
+          git config --global user.email "akhilashokan1996@gmail.com"
           git add -A
           git commit -m "New Build"
           git push            
