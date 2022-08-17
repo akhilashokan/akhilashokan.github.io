@@ -13,9 +13,15 @@
     }
 
     h2 {
-        font-size: toRem(54);
+        font-size: toRem(32);
         line-height: 1.5em;
         margin-bottom: 0.2em;
+    }
+
+    @media (min-width:1100px) {
+        h2 {
+            font-size: clamp(toRem(32), 3.5vw, toRem(64));
+        }
     }
 
     ._showMore {
@@ -31,6 +37,4 @@
         display: none;
         opacity: 0.5;
     }
-
-
 }
