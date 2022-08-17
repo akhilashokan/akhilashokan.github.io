@@ -66,7 +66,7 @@ export default function Works() {
                                 </div>
                                 {work.link.match(regxUrl) !== null && link}
                                 <div className={style.description}>
-                                    {work.description}
+                                    <p>{work.description}</p>
                                 </div>
                             </div>
                         )
