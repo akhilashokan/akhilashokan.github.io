@@ -1,0 +1,36 @@
+@function toRem($value) {
+    $result: ($value/16)+rem;
+    @return $result;
+}
+
+.about {
+    position: relative;
+    margin-left: 0;
+    margin-top: 8rem;
+
+    &::after {
+        content: 'about';
+    }
+
+    h2 {
+        font-size: toRem(54);
+        line-height: 1.5em;
+        margin-bottom: 0.2em;
+    }
+
+    ._showMore {
+        opacity: 0.5;
+        cursor: pointer;
+
+        &::after {
+            content: '....';
+        }
+    }
+
+    ._spans {
+        display: none;
+        opacity: 0.5;
+    }
+
+
+}
