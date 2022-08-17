@@ -43,7 +43,17 @@ body,
 #__next {
     max-width: 1920px;
     margin-inline: auto;
+
+    &::after {
+        content: 'WIP';
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        padding: 0.5rem;
+    }
 }
+
 
 .banner {
     margin-left: 0;
