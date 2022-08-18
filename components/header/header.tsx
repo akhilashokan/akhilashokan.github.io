@@ -3,7 +3,7 @@ import style from "./header.module.scss"
 export default function Header() {
     return (
         <header className={style.header}>
-            <div className="wrapper">
+            <div className={style.wrapper}>
                 <div className={style.logo}>
                     <svg width="132" height="56" viewBox="0 0 132 56" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
