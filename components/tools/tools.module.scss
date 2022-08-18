@@ -1,0 +1,15 @@
+.skills {
+    &::after {
+        content: 'tools';
+    }
+}
+
+.skills_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    padding-top: 2.5rem;
+}
+
+.skill {
+    user-select: none;
+}
