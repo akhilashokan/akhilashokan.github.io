@@ -93,12 +93,16 @@ body,
 }
 
 .aboutPage {
+    h1 {
+        font-size: toRem(64);
+    }
 
     .__intro {
         font-size: 1.5rem;
         font-weight: 400;
         max-width: 45ch;
         color: #333;
+        margin-top: 2rem;
     }
 
     .__intro_extras {
@@ -186,5 +190,18 @@ section {
 
     .intro {
         font-size: toRem(74);
+    }
+
+    .aboutPage {
+        .__intro {
+            font-size: clamp(1.5rem, 4vw, 3rem);
+            margin-top: 2.5rem;
+        }
+
+        p {
+            font-size: clamp(toRem(16), 4vw, toRem(24));
+        }
+
+
     }
 }
