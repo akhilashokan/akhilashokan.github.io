@@ -5,19 +5,19 @@ export default function Tools() {
         <section className={style.skills}>
             <div className={style.skills_container}>
                 <div className={style.skill}>
-                    <Images src={'/tools/flutter.svg'} title={'Flutter'} width={50} height={50} />
+                    <Images src={'/tools/flutter.svg'} title={'Flutter'} width={40} height={40} />
                 </div>
                 <div className={style.skill}>
-                    <Images src={'/tools/typescript.svg'} title={'TypeScript'} width={50} height={50} />
+                    <Images src={'/tools/typescript.svg'} title={'TypeScript'} width={40} height={40} />
                 </div>
                 <div className={style.skill}>
-                    <Images src={'/tools/firebase.svg'} title={'Firebase'} width={50} height={50} />
+                    <Images src={'/tools/firebase.svg'} title={'Firebase'} width={40} height={40} />
                 </div>
                 <div className={style.skill}>
-                    <Images src={'/tools/nodejs.svg'} title={'NodeJS'} width={50} height={50} />
+                    <Images src={'/tools/nodejs.svg'} title={'NodeJS'} width={40} height={40} />
                 </div>
                 <div className={style.skill}>
-                    <Images src={'/tools/nextjs.svg'} title={'nextJS'} width={50} height={50} />
+                    <Images src={'/tools/nextjs.svg'} title={'nextJS'} width={40} height={40} />
                 </div>
             </div>
         </section>

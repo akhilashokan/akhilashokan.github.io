@@ -2,12 +2,16 @@
     &::after {
         content: 'tools';
     }
+
+    text-align: center;
+
 }
 
 .skills_container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
     padding-top: 2.5rem;
+    gap: 1rem;
 }
 
 .skill {

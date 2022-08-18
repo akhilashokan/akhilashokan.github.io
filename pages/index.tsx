@@ -1,5 +1,6 @@
 import About from "../components/about/about"
 import Banner from "../components/banner"
+import Contact from "../components/contact/contact"
 import Footer from "../components/footer/footer"
 import Header from "../components/header/header"
 import Tools from "../components/tools/tools"
@@ -13,6 +14,7 @@ export default function App() {
             <About />
             <Works />
             <Tools />
+            <Contact />
         </main>
         <Footer />
     </>)
