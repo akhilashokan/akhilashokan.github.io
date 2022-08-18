@@ -48,6 +48,8 @@ body,
     &::after {
         content: 'WIP';
         position: fixed;
+        z-index: 99;
+        border-radius: 0 0 0 50%;
         top: 0;
         right: 0;
         background-color: rgba($color: #000000, $alpha: 0.2);

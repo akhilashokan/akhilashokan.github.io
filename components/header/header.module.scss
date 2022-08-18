@@ -9,6 +9,9 @@
     left: 0;
     width: 100%;
     padding: toRem(24);
+    background-color: rgba($color: #fff, $alpha: .6);
+    backdrop-filter: blur(3px);
+    z-index: 2;
 
     .wrapper {
         display: block;
