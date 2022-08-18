@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Work+Sans:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One:wght@200;400&display=swap');
 
 html {
     box-sizing: border-box;
@@ -14,7 +14,8 @@ html {
 }
 
 $primaryFont: 'Poiret One', monospace;
-$secondaryFont: 'Work Sans', sans-serif;
+$secondaryFont: Arial, Helvetica;
+$accentColor: #3FA34D;
 
 @function toRem($value) {
     $result: ($value/16)+rem;
@@ -89,9 +90,36 @@ body,
     }
 }
 
+.aboutPage {
+
+    .__intro {
+        font-size: 1.5rem;
+        font-weight: 400;
+        max-width: 45ch;
+        color: #333;
+    }
+
+    .__intro_extras {
+        line-height: 2.5ch;
+    }
+
+    p {
+        margin-bottom: 1rem;
+        max-width: 65ch;
+        font-size: toRem(16);
+    }
+
+
+}
+
 // general 
 main {
     padding-inline: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: $accentColor;
 }
 
 section {

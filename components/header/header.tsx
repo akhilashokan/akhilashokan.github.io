@@ -1,3 +1,4 @@
+import Link from "next/link";
 import style from "./header.module.scss"
 export default function Header() {
     return (
@@ -11,6 +12,9 @@ export default function Header() {
                     </svg>
                 </div>
                 <div className={style.menu}>
+                    <Link href={'/'}> home </Link>
+                    <Link href={'/about'}> about </Link>
+                    {/* <button className={style.btn}></button> */}
                 </div>
             </div>
         </header>
