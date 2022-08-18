@@ -21,7 +21,7 @@ export default function About() {
                     <em title="learned them to teach my cousin sis">python (tkinter/flask)</em> to build apps.
                 </p>
                 <p className="__intro_extras">
-                    For more information here is my <strong><a title="link to my resume" href={"/AkhilAshokanResume.pdf"}> full resume</a></strong> .
+                    For more information here is my <strong><a title="link to my resume" href="https://github.com/akhilashokan/akhilashokan.github.io/raw/react/public/AkhilAshokanResume.pdf"> full resume</a></strong> .
                 </p>
             </section>
 
