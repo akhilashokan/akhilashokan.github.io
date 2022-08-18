@@ -3,6 +3,10 @@
     @return $result;
 }
 
+.works::after {
+    content: 'works';
+}
+
 .works_container {
     width: 100%;
     max-width: 1600px;

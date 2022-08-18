@@ -44,7 +44,7 @@ export default function Works() {
     )
 
     return (
-        <section className="works">
+        <section className={style.works}>
             <div className="wrapper column">
                 <div className={style.works_container} id="__id">
                     {works.map((work: Work, index: number) => {
