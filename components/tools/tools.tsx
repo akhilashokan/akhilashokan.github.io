@@ -19,6 +19,9 @@ export default function Tools() {
                 <div className={style.skill}>
                     <Images src={'/tools/nextjs.svg'} title={'nextJS'} width={40} height={40} />
                 </div>
+                <div className={style.skill}>
+                    <Images src={'/tools/php.svg'} title={'php'} width={40} height={40} />
+                </div>
             </div>
         </section>
     )
