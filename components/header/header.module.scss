@@ -55,7 +55,6 @@ $primaryFont: 'Poiret One', monospace;
         }
     }
 
-
     svg {
         height: toRem(24);
         width: auto;
@@ -83,13 +82,13 @@ $primaryFont: 'Poiret One', monospace;
             width: 100%;
             height: 1rem;
             background-color: #fff;
+            opacity: 0;
             position: absolute;
             left: 0;
             top: 0;
             z-index: -1;
             border-radius: 0 0 50% 50%;
             transition: 0.3s cubic-bezier(0.77, 0, 0.175, 1);
-
         }
 
         &:hover {
@@ -97,6 +96,7 @@ $primaryFont: 'Poiret One', monospace;
 
             &::after {
                 height: 3rem;
+                opacity: 1;
             }
         }
     }
