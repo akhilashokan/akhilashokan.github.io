@@ -18,7 +18,7 @@ export default function About() {
                     new things and how things function behind the scenes.
                     So far I have dabbled with <em title="Catering App">android (java)</em>,
                     <em title="PropMan">flutter (Windows)</em>, <em title="this site :)">react</em>, and
-                    <em title="learned them to teach my cousin sis">python (tkinter/flask)</em> to build apps.
+                    <em title="learned them to teach my cousin sis"> python (tkinter/flask)</em> to build apps.
                 </p>
                 <p className="__intro_extras">
                     For more information here is my <strong><a title="link to my resume" href="https://github.com/akhilashokan/akhilashokan.github.io/raw/react/public/AkhilAshokanResume.pdf"> full resume</a></strong> .
