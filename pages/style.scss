@@ -70,8 +70,9 @@ body,
     &::after {
         content: attr(attr-craft);
         display: block;
-        font-size: toRem(18);
+        font-size: toRem(22);
         font-weight: 400;
+        font-family: $primaryFont;
     }
 }
 
@@ -191,6 +192,10 @@ section {
 
     .intro {
         font-size: toRem(74);
+
+        &::after {
+            text-indent: 0.2em;
+        }
     }
 
     .aboutPage {
