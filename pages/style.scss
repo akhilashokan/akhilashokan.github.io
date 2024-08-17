@@ -18,7 +18,8 @@ $secondaryFont: Arial, Helvetica;
 $accentColor: #3FA34D;
 
 @function toRem($value) {
-    $result: ($value/16)+rem;
+    $result: (
+        $value/16)+rem;
     @return $result;
 }
 
@@ -51,10 +52,11 @@ body,
     height: 100%;
     position: fixed;
     inset: 0;
-    background-color: rgba($color: #fff, $alpha: 0.5);
-    backdrop-filter: blur(5px);
-    z-index: 10;
-    transform: translateX(0%);
+    background-color: rgba($color: #fff, $alpha: 0.5
+    );
+backdrop-filter: blur(5px);
+z-index: 10;
+transform: translateX(0%);
 }
 
 .banner {
@@ -68,7 +70,7 @@ body,
     font-weight: 400;
 
     &::after {
-        content: attr(attr-craft);
+        content: attr(aria-describedby);
         display: block;
         font-size: toRem(22);
         font-weight: 400;

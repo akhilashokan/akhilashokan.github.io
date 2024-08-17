@@ -1,26 +1,29 @@
 @function toRem($value) {
-    $result: ($value/16)+rem;
+    $result: (
+        $value/16)+rem;
     @return $result;
 }
 
-$primaryFont: 'Poiret One', monospace;
+$primaryFont: 'Poiret One',
+    monospace;
 
 .header {
     position: sticky;
     top: 0;
     left: 0;
     width: 100%;
-    padding: toRem(24);
-    background-color: rgba($color: #fff, $alpha: .6);
-    backdrop-filter: blur(3px);
-    z-index: 2;
-    font-family: $primaryFont;
+    padding: toRem(24
+    );
+background-color: rgba($color: #fff, $alpha: .6);
+backdrop-filter: blur(3px);
+z-index: 2;
+font-family: $primaryFont;
 
-    .wrapper {
-        display: block;
-        overflow: visible;
-        position: relative;
-    }
+.wrapper {
+    display: block;
+    overflow: visible;
+    position: relative;
+}
 }
 
 .logo {
@@ -58,6 +61,8 @@ $primaryFont: 'Poiret One', monospace;
     svg {
         height: toRem(24);
         width: auto;
+        cursor: pointer;
+
     }
 }
 
@@ -92,7 +97,7 @@ $primaryFont: 'Poiret One', monospace;
         }
 
         &:hover {
-            transform: translateY(-50%);
+            transform: translateY(5%);
 
             &::after {
                 height: 3rem;
