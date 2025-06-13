@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One:wght@200;400&display=swap');
+@import "tailwindcss";
+
+@theme {
+    --font-primary: 'Poiret One';
+}
+
+._hide {
+    display: none;
+}
+
+.splash{
+    background-color: red;
+}
