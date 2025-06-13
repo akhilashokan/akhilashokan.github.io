@@ -1,8 +1,6 @@
 name: portfolio
 
 on:
-  push:
-    branches: [ "react" ]
   pull_request:
     branches: [ "react" ]
 
