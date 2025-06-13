@@ -1,9 +1,8 @@
 'use client'
 import { useEffect, useRef } from "react"
 
-export default function () {
+export default function Splash() {
     const ref = useRef();
-    console.log('test');
     
     useEffect(() => {
         const element: HTMLDivElement = ref.current;

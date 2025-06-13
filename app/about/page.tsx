@@ -2,7 +2,7 @@ export const metadata = {
     title: 'About',
     description: 'About Akhil Ashokan',
 }
-export default function () {
+export default function About() {
     return (
         <section className="mt-24 text-gray-800 max-w-[1600px] mx-auto font-[Arial,Helvetica] text-2xl splash">
             <h1 className="font-primary text-6xl mb-14" >About</h1>
