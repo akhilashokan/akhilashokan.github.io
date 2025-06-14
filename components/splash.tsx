@@ -35,6 +35,6 @@ export default function Splash() {
         }, 400);
     }
     return (
-        <div className="transition-transform duration-400 w-full h-dvh fixed inset-0 bg-[hsla(0,0%,100%,.4)] backdrop-blur-[24px] z-20 cursor-progress" ref={ref}></div>
+        <div className="transition-transform duration-400 w-full h-dvh fixed inset-0 bg-[hsla(0,0%,100%,.4)] dark:bg-[hsla(0,0%,20%,.4)] backdrop-blur-[24px] z-20 cursor-progress" ref={ref}></div>
     )
 }
