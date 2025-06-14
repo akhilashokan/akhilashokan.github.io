@@ -1,12 +1,15 @@
 'use client'
 import { useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { EventEmitter as Emitter } from "./eventEmitter";
 export default function Header() {
     const router = useRouter();
+    const pathName = usePathname()
     let timer: NodeJS.Timeout = null;
 
     async function goto(path: string) {
+        const isOnSamePage = pathName === path;
+        if (isOnSamePage) return
         if (timer !== null) clearTimeout(timer);
         Emitter.dispatchEvent(new CustomEvent('splashActive', { detail: { show: true } }));
         timer = setTimeout(() => {
