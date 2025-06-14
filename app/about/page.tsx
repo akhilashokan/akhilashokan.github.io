@@ -4,7 +4,7 @@ export const metadata = {
 }
 export default function About() {
     return (
-        <section className="mt-24 text-gray-800 max-w-[1600px] mx-auto font-[Arial,Helvetica] text-2xl">
+        <section className="mt-24 text-gray-800 dark:text-gray-200 max-w-[1600px] mx-auto font-[Arial,Helvetica] text-2xl">
             <h1 className="font-primary text-6xl mb-14" >About</h1>
 
             <p className="text-2xl md:text-5xl font-medium max-w-[45ch]">
