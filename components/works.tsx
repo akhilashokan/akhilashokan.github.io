@@ -45,7 +45,7 @@ export default function Works() {
                                 {work?.link?.match(regxUrl) !== null && link}
                                 <span className="absolute w-full h-[1px] left-0 bottom-0 bg-gray-400 transition-all duration-500 ease-in-out max-w-0 group-hover/work:max-w-full"></span>
                             </div>
-                            <div className="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-hover/work:max-h-8">
+                            <div className="transition-all duration-300 ease-in-out overflow-hidden max-h-0 group-hover/work:max-h-80 group-focus-within/work:max-h-80">
                                 <p>{work?.description}</p>
                             </div>
                         </div>
