@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 type SectionType = {
     name: string;
-    children: ReactNode;
+    children?: ReactNode;
     className?: string;
 }
 

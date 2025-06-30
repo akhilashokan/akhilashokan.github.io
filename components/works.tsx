@@ -22,7 +22,11 @@ export default function Works() {
             .then(data => setWorks(data))
             .catch(err => console.info('Prop fetch failed.', err))
             .finally(() => setLoading(false))
-    }, [])
+    }, []);
+
+    if (isLoading) return (<div className="flex justify-center font-primary opacity-50 text-2xl">Loading...</div>);
+
+    if (!works) return (<div className="flex justify-center opacity-50"><em>Failed to load works</em></div>);
 
     return (
         <Section name="works">
