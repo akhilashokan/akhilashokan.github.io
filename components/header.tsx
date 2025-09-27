@@ -18,6 +18,29 @@ export default function Header() {
     }
 
     useEffect(() => {
+        const logger = () => {
+            const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const text = "%cWell hello there, %csnooping on the console I see.\n%cThis site runs on Next.js, styled with Tailwind, hosted on GitHub Pages.\nPlus, a little custom API to for my works.";
+
+            if (isDark) {
+                console.log(
+                    text,
+                    "color: #eeeeee; font-weight: 700; font-family: system-ui, sans-serif; font-size: 18px;",
+                    "color: #bbbbbb; font-weight: 600; font-family: system-ui, sans-serif; font-size: 18px;",
+                    "color: #999999; font-family: system-ui, sans-serif; font-size: 13px; font-style: italic;"
+                );
+            } else {
+                console.log(
+                    text,
+                    "color: #000000; font-weight: 700; font-family: system-ui, sans-serif; font-size: 18px;",
+                    "color: #333333; font-weight: 600; font-family: system-ui, sans-serif; font-size: 18px;",
+                    "color: #666666; font-family: system-ui, sans-serif; font-size: 13px; font-style: italic;"
+                );
+            }
+        }
+
+        logger();
+
         return () => {
             if (timer) clearInterval(timer);
         }
