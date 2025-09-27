@@ -2,16 +2,16 @@
 import { ReactElement, useEffect, useState } from "react"
 import Section from "./Section"
 type Work = {
-    title: string,
-    subTitle: string,
-    description: string,
-    buildWith: string,
-    link: string,
-    thumb: string
+    title: string;
+    subTitle?: string;
+    description?: string;
+    buildWith?: string;
+    link?: string;
+    thumb?: string;
 }
 
 export default function Works() {
-    const [works, setWorks] = useState(null)
+    const [works, setWorks] = useState<Work[]>([]);
     const [isLoading, setLoading] = useState(false)
     const regxUrl = /^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&\/=]*)$/
 
