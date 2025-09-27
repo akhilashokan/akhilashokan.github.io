@@ -42,7 +42,7 @@ export default function Works() {
                     </a>
 
                     return (
-                        <div tabIndex={index} title={work?.title} className="group/work" key={`wordId_${index}`} style={{ backgroundImage: thumb ? `url(${thumb})` : '' }} >
+                        <div tabIndex={index} title={work?.title} className="group/work" key={`workId_${index}`} style={{ backgroundImage: thumb ? `url(${thumb})` : '' }} >
                             <div className="flex items-end gap-2 relative py-4 flex-wrap">
                                 <h3 className="text-3xl block w-full lg:text-6xl font-primary capitalize">{work?.title}</h3>
                                 <p className="opacity-80 text-base">{work?.buildWith}</p>
