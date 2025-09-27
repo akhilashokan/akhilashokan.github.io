@@ -20,7 +20,13 @@ export default function Header() {
     useEffect(() => {
         const logger = () => {
             const isDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-            const text = "%cWell hello there, %csnooping on the console I see.\n%cThis site runs on Next.js, styled with Tailwind, hosted on GitHub Pages.\nPlus, a little custom API to for my works.";
+
+            const greeting = "Well hello there, ";
+            const remark = "snooping on the console I see.";
+            const details = "This site runs on Next.js, styled with Tailwind, hosted on GitHub Pages. Plus, a little custom API to fetch my works.";
+            const github = "Check out the source code: https://github.com/akhilashokan/akhilashokan.github.io/tree/react";
+
+            const text = `%c${greeting}%c${remark}\n%c${details}\n${github}`;
 
             if (isDark) {
                 console.log(
