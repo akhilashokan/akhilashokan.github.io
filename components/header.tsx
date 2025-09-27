@@ -48,7 +48,7 @@ export default function Header() {
         logger();
 
         return () => {
-            if (timer) clearInterval(timer);
+            if (timer) clearTimeout(timer);
         }
     }, [])
 
