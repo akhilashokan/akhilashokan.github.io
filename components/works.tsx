@@ -31,7 +31,7 @@ export default function Works() {
     return (
         <Section name="works">
             <div className="flex flex-col gap-10 py-10">
-                {!isLoading && works && works.map((work: Work, index: number) => {
+                {!isLoading && Array.isArray(works) && works?.map((work: Work, index: number) => {
                     var link: ReactElement
                     var thumb: string = ''
                     // work.thumb.match(/\.(jpg|png|webp)$/) !== null ? encodeURI(work.thumb) : ''  todo 
