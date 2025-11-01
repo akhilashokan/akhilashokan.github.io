@@ -8,6 +8,7 @@ type Work = {
     buildWith?: string;
     link?: string;
     thumb?: string;
+    show?: boolean;
 }
 
 export default function Works() {
@@ -32,6 +33,7 @@ export default function Works() {
         <Section name="works">
             <div className="flex flex-col gap-10 py-10">
                 {!isLoading && Array.isArray(works) && works?.map((work: Work, index: number) => {
+                    if (!work.show) return null;
                     var link: ReactElement
                     var thumb: string = ''
                     // work.thumb.match(/\.(jpg|png|webp)$/) !== null ? encodeURI(work.thumb) : ''  todo 
