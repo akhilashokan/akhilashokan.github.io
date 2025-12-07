@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react"
 import { EventEmitter as Emitter } from "./eventEmitter";
 
 export default function Splash() {
-    const ref = useRef();
+    const ref = useRef(null);
     let timer: NodeJS.Timeout = null;
 
     useEffect(() => {
